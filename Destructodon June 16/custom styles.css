@@ -1,3 +1,15 @@
 body {
   background-color: #121416;
 }
+
+.container-jumbo {
+  position: relative;
+  border: solid purple;
+}
+
+.jumbotron-fluid {
+  position: relative;
+  text-align: right;
+  background-color: transparent;
+  color: white;
+}
