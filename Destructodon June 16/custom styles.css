@@ -13,3 +13,9 @@ body {
   background-color: transparent;
   color: white;
 }
+
+.first-table {
+  position: relative;
+  text-align: center;
+  border: solid grey;
+}
