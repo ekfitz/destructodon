@@ -1,0 +1,64 @@
+body {
+  background-color: #342F37;
+}
+
+.navbar {
+  background-color: #29272B;
+}
+
+.custombackground1 {
+  position: relative;
+  width: 100%;
+  background-color: #151316;
+}
+
+.navbar-brand {
+  color: #adb5bd;
+}
+
+.nav-link {
+  color: #adb5bd;
+}
+
+.container-jumbo {
+  position: relative;
+  background-color: #151316;
+  min-height: 66vh;
+  overflow: hidden;
+}
+
+.imgcontainer {
+  position: absolute;
+  width: 80%;
+  top: -7.5em;
+  left: -18em;
+}
+
+.backgroundimage {
+  width: 100%;
+}
+
+.jumbotron {
+  position: relative;
+  text-align: right;
+  color: white;
+  background-color: transparent;
+  width: 50%;
+  left: 50%;
+  top: 5em;
+}
+
+.first-table {
+  position: relative;
+  text-align: left;
+  color: #BFD7EA;
+  background-color: transparent;
+}
+
+.row-uno {
+  padding-top: 50px;
+}
+
+#mfs_html5 {
+  box-shadow: -3px 2.5px 8px black;
+}
