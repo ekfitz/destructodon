@@ -59,6 +59,12 @@ body {
   padding-top: 50px;
 }
 
+.line {
+  border: solid #29272B;
+  border-width: thin;
+}
+
+
 #mfs_html5 {
   box-shadow: -3px 2.5px 8px black;
 }
