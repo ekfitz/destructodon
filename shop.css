@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+
+.navbar {
+  background-color: purple;
+}
+
+.welcomeBanner {
+  color: white;
+}
+
+.firstItem {
+  color: white;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.websitesDescription {
+  color: white;
+  text-align: right;
+}
+
+.lineBreak {
+  border: solid white;
+}
+
+.first-table {
+  color: white;
+}
