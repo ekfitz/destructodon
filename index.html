@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>DM Websites</title>
   </head>
@@ -15,13 +16,11 @@
           <div class="container">
             <a class="navbar-brand" href="#">Destructodon Media</a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="navbar-collapse collapse" id="navbarsExample07" style="">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" id="homeButton" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link disabled" href="#">Shop</a>
@@ -38,21 +37,16 @@
         <div class="top">
           <div class="jumbotron">
             <h1 class="display-4">Welcome to DM Web Development</h1>
+            <span class="oi oi-circle-x"></span>
+
             <p>A landing page is a great way to direct traffic to your social media. Pick one up for $95 along with free domain transfers.</P>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+              <a class="btn btn-primary btn-lg" id="ctaButton" href="#" role="button">Learn More</a>
             </p>
           </div>
         </div>
       </div>
 
-      <br>
-      <div class="container">
-        <div class="mission">
-          <p>Type in a paragraph about how my websites are super dope and hassle free. I do all the work and only charge a flat advertised fee. Pretty awesome if you don't want to spend all your time wrestling with stupid web editors.</P>
-        </div>
-      </div>
-      <br>
       <br>
 
       <!-- Pricing cards-->
@@ -65,7 +59,7 @@
             <div class="card-body">
               <h1 class="card-title pricing-card-title">
                 $95
-                <small class="text-muted">/ year</small>
+                <!--<small class="text-muted">/ year</small>-->
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Free hosting</li>
@@ -73,7 +67,7 @@
                 <li>Discounted new domains</li>
                 <li>Discounted updates</li>
               </ul>
-              <button class="btn btn-lg btn-block btn-outline-primary" type="buton">Learn more</button>
+              <button class="btn btn-sm btn-block btn-outline-light" type="buton" id="lpButton">Learn more</button>
               </div>
             </div>
 
@@ -84,7 +78,7 @@
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
                   $165
-                  <small class="text-muted">/ year</small>
+                  <!--<small class="text-muted">/ year</small>-->
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Up to 4 pages</li>
@@ -92,7 +86,7 @@
                   <li>Code access</li>
                   <li>Discounted updates</li>
                 </ul>
-                <button class="btn btn-lg btn-block btn-primary" type="buton">Get started</button>
+                <button class="btn btn-sm btn-block btn-outline-light" type="buton" id="staticButton">Get started</button>
                 </div>
               </div>
 
@@ -101,44 +95,92 @@
               <h4 class="my-0 font-weight-normal">Dynamic Site</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$295<small class="text-muted">/ year</small></h1>
+              <h1 class="card-title pricing-card-title">$295
+                <!--<small class="text-muted">/ year</small>-->
+              </h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Unlimited pages</li>
                 <li>Free hosting</li>
                 <li>1 database</li>
                 <li>CMS integration</li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+              <button type="button" class="btn btn-sm btn-block btn-outline-light" id="dynamicButton">Contact us</button>
             </div>
           </div>
         </div>
       </div>
 
+<!-- Hidden containers to toggle -->
       <div class="container">
-        <div class="mission">
-          <p>Type in a paragraph about how my websites are super dope and hassle free. I do all the work and only charge a flat advertised fee. Pretty awesome if you don't want to spend all your time wrestling with stupid web editors.</P>
+        <div class="iconCont">
+          <span class="material-icons md-inactive" id="closeButton">
+            cancel
+          </span>
+        </div>
+
+        <div class="mission" id="lpDetails">
+          <h1>Landing Page</h1>
+          <p class="morePadding">A landing page is perfect for any small business that operates from social media.
+            If you're anything like us, your brand spans across multiple platforms with an intricate web of links
+            connecting everything together. Right? A landing page is a way to showcase all your top social media
+            posts and consolidate your links in one spot.</p>
+          <p class="morePadding">How it works: Each page is custom designed. Just give us some guidelines on how
+            you want the layout and we'll create a custom page for you. If you already have logos, pictures, etc,
+            just send those in and we will include them with your page.</p>
+          <p class="morePadding">Let's talk about price: the base price includes one complete webpage in any format
+            you want. If you already purchased a domain and hosting, we can send you the .zip file for you to upload
+            with your hosting provider. Or just sit back and relax and let us worry about the setup. This package
+            includes free hosting and free domain transfers. If you already purchased a domain and don't want to transfer,
+            don't even worry: we can still host and walk you through how to point your DNS to our servers. If you need a
+            domain name, we are happy to purchase one for you (subject to availability). We will just add the price of the
+            domain to you invoice.</p>
+            <p class="morePadding">Did we mention you can split up your payments? How about over 3 months? No credit cards
+            or automatic billing. We just send you an invoice for each month and if you are unable to pay, we'll just stop
+            service to your page. No late fees, no interest, no weird stipulations and nothing to worry about. Okay so I
+            know what you're thinking: what if I need to update content on my page? Again, we got you covered with the flat
+            fees. We charge a flat $20 service fee for each update. We'll send you a preview of the updates you requested
+            and once payment clears, we'll send it live.</p>
         </div>
       </div>
       <br>
       <br>
 
+      <div class="container">
+        <div class="mission" id="staticDetails">
+          <p class="morePadding">Type in a paragraph about how my websites are super dope and hassle free. I do all the work and only charge a flat advertised fee. Pretty awesome if you don't want to spend all your time wrestling with stupid web editors.</P>
+        </div>
+      </div>
+      <br>
+      <br>
 
+      <div class="container">
+        <div class="mission" id="dynamicDetails">
+          <p class="morePadding">Type in a paragraph about how my websites are super dope and hassle free. I do all the work and only charge a flat advertised fee. Pretty awesome if you don't want to spend all your time wrestling with stupid web editors.</P>
+        </div>
+      </div>
+      <br>
+      <br>
       <!-- PHP form -->
-    <div class="container">
+  <!--  <div class="container">
       <form action="./mail.php" method="POST">
         <p>Name</p> <input type="text" name="name">
         <p>Email</p> <input type="text" name="email">
         <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
         <input type="submit" value="Send"><input type="reset" value="Clear">
       </form>
-    </div>
+    </div>-->
 
       <!--Contact Form -->
-
-      <div class="container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyvzA72sYXBbQqzvmy66ZVpQXeNrNOAWJ4YZ69Cdj6YKKABQ/viewform?embedded=true" width="640" height="903" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <div class="container gFormsTitle">
+        <h1>Contact</h1>
+      </div>
+      <div class="container gForms">
+        <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLScyvzA72sYXBbQqzvmy66ZVpQXeNrNOAWJ4YZ69Cdj6YKKABQ/viewform?embedded=true" width="640" height="903" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
 
+
+      <br>
+      <br>
         <!-- google chart-->
 
           <div class="container googleCharts">
@@ -150,5 +192,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
       </body>
     </html>

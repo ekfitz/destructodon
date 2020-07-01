@@ -2,8 +2,33 @@ body {
   background-color: #212529;
 }
 
+.material-icons {
+  font-size: 48px;
+  color: white;
+  opacity: 10%;
+}
+
+.iconCont {
+  position: absolute;
+  opacity: 10%;
+  cursor: pointer;
+  right: 8em;
+}
+
 .navbar {
   background-color: #2B3035;
+}
+
+.navbar-brand {
+  color: #9B15F4;
+}
+
+.nav-link {
+  color: #212529;
+}
+
+.nav-link:hover {
+  color: #9B15F4;
 }
 
 .top {
@@ -27,16 +52,50 @@ body {
   color: white;
 }
 
+.text-muted {
+  font-size: 16px;
+  color: black !important;
+}
+
 .mission {
-  border: solid green;
   padding: 10px;
   text-align: center;
   color: white;
 }
 
-.text-muted {
-  font-size: 16px;
-  color: black !important;
+.morePadding {
+  padding-left: 6em;
+  padding-right: 6em;
+  text-align: left;
+}
+
+.gFormsTitle {
+  position: relative;
+  width: 100%;
+  height: 5em;
+  background-color: #495057;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.gForms {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  overflow: hidden;
+  background-color: #495057;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+#ctaButton {
+  border: solid #3A0CA3;
+  background-color: #3A0CA3;
+}
+
+#ctaButton:hover {
+  background-color: transparent;
+  color: #3A0CA3;
 }
 
 #landingPage {
@@ -48,5 +107,12 @@ body {
 }
 
 #dynamicSite {
-  background-color: #7209B7;
+  background-color: #9B15F4;
+}
+
+#googleForm {
+  position: relative;
+  float: left;
+  top: -6.75em;
+  width: 30em;
 }
