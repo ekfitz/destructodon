@@ -1,5 +1,4 @@
 hideDetails();
-
 homeButton.onclick = underConstruction;
 
 function underConstruction() {
@@ -20,6 +19,7 @@ dynamicButton.onclick = showDetails;
 
 function hideDetails(){
   $(".mission").css("display", "none");
+  $(".hiding").css("height", "0em");
   closeButton.style.display = "none";
 }
 
@@ -36,4 +36,5 @@ function showDetails(){
     lpDetails.style.display = "none";
     staticDetails.style.display = "none";
   }
+  $(".hiding").css("height", "42em");
 }
